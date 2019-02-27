@@ -6,4 +6,7 @@ package leetcode.strings;
  */
 
 public class UniqueMorseCodeWords804 {
+    public static void main(String[] args){
+        
+    }
 }

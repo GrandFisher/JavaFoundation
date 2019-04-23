@@ -146,5 +146,12 @@ public class Sort {
 
     }
 
+    public static void quickSort(int arr[]) {
+        int len=arr.length;
+
+
+
+    }
+
 
 }

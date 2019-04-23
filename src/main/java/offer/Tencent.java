@@ -35,7 +35,7 @@ public class Tencent {
 
                         minco[i] = minco[i - coin[j]] + coin[j];
                         count[i] = count[i - coin[j]].clone();
-                        System.out.println("i-coinj " + (i - coin[j]) +  + Arrays.toString(count[i - coin[j]]));
+                        System.out.println("i-coinj " + (i - coin[j]) + Arrays.toString(count[i - coin[j]]));
                         count[i][j]++;
 
 

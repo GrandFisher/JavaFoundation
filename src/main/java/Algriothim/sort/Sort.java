@@ -1,4 +1,4 @@
-package sort;
+package Algriothim.sort;
 
 import java.util.Arrays;
 
@@ -10,11 +10,12 @@ import java.util.Arrays;
 public class Sort {
 
     public static void main(String[] args) {
-        int[] a = new int[]{1, 3, 2, 4};
+        int[] a = new int[]{3, 4, 2, 1,6,9};
 //        bubbleSort(a);
 //        selectionSort(a);
-        insertionSort(a);
-        shellSort(a);
+//        insertionSort(a);
+//        shellSort(a);
+        quickSort(a);
     }
 
 
@@ -145,13 +146,45 @@ public class Sort {
 
 
     }
+    private static int arrS[];
+    public static void quickSort(int [] arr) {
+        arrS = arr;
+        int len = arrS.length;
+        int i = 0, j = len - 1;
+        quickSort(i, j);
 
-    public static void quickSort(int arr[]) {
-        int len=arr.length;
+        System.out.println(Arrays.toString(arrS));
+    }
 
+
+    private static void quickSort(int i,int j) {
+        if (i>=j) return;
+        int pos= quickSortDigging(i,j);
+        quickSort(i,pos-1);
+        quickSort(pos+1,j);
 
 
     }
+
+    private static int quickSortDigging(int left,int right) {
+        int i = left , j = right;
+        int temp=arrS[left];
+        while (i < j) {
+            while (i <j && arrS[j] >= temp) {
+                j--;
+
+            }
+            arrS[i]=arrS[j];
+            while (i < j && arrS[i] < temp) {
+
+                i++;
+            }
+            arrS[j]=arrS[i];
+        }
+        arrS[i]=temp;
+        return  i;
+    }
+
 
 
 }

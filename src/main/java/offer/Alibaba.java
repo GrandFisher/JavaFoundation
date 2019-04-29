@@ -25,7 +25,8 @@ public class Alibaba {
         }
 
     }
-//    A,F
+
+//A,F
 //A,NULL
 //B,A
 //D,B
@@ -84,44 +85,37 @@ public class Alibaba {
                 map.put(ts, node);
             }
         }
-
     }
 
     public void findpath(char start, char end) {
-        int cnt=-1;
-        int floor=1;
-        int t=0;
+        int cnt = -1;
+        int floor = 1;
+        int t = 0;
 
-        Queue<Node> q=new LinkedList<>();
+        Queue<Node> q = new LinkedList<>();
         q.offer(map.get(start));
 
-        while (!q.isEmpty()){
-            Node node =q.poll();
-            if(node.val==end){
+        while (!q.isEmpty()) {
+            Node node = q.poll();
+            if (node.val == end) {
 
                 System.out.println(cnt);
-                return ;
+                return;
             }
 
-
-
-            List<Character> list=node.list;
-            t+=list.size();
+            List<Character> list = node.list;
+            t += list.size();
             floor--;
-            if(floor==0){
+            if (floor == 0) {
                 cnt++;
-                floor=t;
-                t=0;
+                floor = t;
+                t = 0;
             }
-            for(char c:list){
+            for (char c : list) {
                 q.offer(map.get(c));
             }
 
-
-
         }
-
     }
-
 
 }

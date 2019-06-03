@@ -1,8 +1,8 @@
-package Algriothim.sort;
+package algriothim.sort;
 
 import java.util.Arrays;
 
-import static Algriothim.sort.SelectionSort.selectionSort;
+import static algriothim.sort.SelectionSort.selectionSort;
 
 /**
  * @author xuan

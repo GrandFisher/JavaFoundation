@@ -1,6 +1,5 @@
-package Algriothim.sort;
+package algriothim.sort;
 
-import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 
 /**

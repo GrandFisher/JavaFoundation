@@ -1,4 +1,4 @@
-package Algriothim.sort;
+package algriothim.sort;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package grammer.ListDemo;
+package grammer.CollectionDemo;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

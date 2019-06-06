@@ -12,7 +12,7 @@ public class KMP {
     public static void main(String[] args) {
         String S = "abcabc";
         String T = "cab";
-        System.out.println(KMPSearch(S,T));
+        System.out.println(KMPSearch(S, T));
     }
 
     private static int KMPSearch(String S, String T) {
@@ -50,6 +50,7 @@ public class KMP {
             }
         }
     }
+
     //优化
     private static void getNextPlus(String T) {
         next = new int[T.length()];

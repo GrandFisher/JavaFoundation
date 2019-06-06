@@ -1,9 +1,7 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author xuan
@@ -15,6 +13,8 @@ public class leet78 {
 
     public static void main(String[] args) {
         int[] nums =new int[]{1,2,3};
+        HashMap<String,String> f=new HashMap<>();
+        ConcurrentHashMap<String ,String> concurrentHashMap=new ConcurrentHashMap<>();
         subsets(nums);
     }
 

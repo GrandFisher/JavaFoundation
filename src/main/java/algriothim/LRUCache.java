@@ -1,4 +1,4 @@
-package Algriothim;
+package algriothim;
 
 import java.util.HashMap;
 

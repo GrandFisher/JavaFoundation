@@ -1,5 +1,6 @@
 package leetcode.strings;
 
+
 import org.junit.Test;
 
 public class GoatLatin824 {

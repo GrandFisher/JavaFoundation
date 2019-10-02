@@ -95,10 +95,7 @@ public class MeiTuan {
                     cnt++;
                     j=0;
                 }
-
             }
-
-
         }
 
 //        private static void getNext(String T) {
